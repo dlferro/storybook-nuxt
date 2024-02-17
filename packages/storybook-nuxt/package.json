@@ -58,10 +58,11 @@
     "test": "vitest run",
     "dev": "unbuild && cd playground && storybook dev -p 6006",
     "prepack": "unbuild",
-    "release": "pnpm changelogen --release --push && pnpm publish"
+    "release": "pnpm changelogen --release --push && pnpm publish",
+    "postinstall": "unbuild"
   },
   "peerDependencies": {
-    "nuxt": "^3.6 || ^3.7 || ^3.8",
+    "nuxt": "^3.6",
     "vite": "^3.0.0 || ^4.0.0 || ^5.0.0",
     "vue": "^3.0.0"
   },
